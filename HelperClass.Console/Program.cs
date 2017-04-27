@@ -10,7 +10,7 @@ namespace HelperClass.Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine(FileHelper.ReadUseFs(@"F:\temp.txt"));
+            System.Console.WriteLine(FileHelper.ReadUseSr(@"F:\temp.txt"));
             System.Console.ReadKey();
         }
     }

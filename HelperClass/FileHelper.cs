@@ -28,13 +28,8 @@ namespace HelperClass
         public static string ReadUseSr(string path)
         {
             var sr = new StreamReader(path, Encoding.Default);
-            var sb = new StringBuilder();
-            string line;
-            while ((line = sr.ReadLine()) != null)
-            {
-                sb.Append(line);
-            }
-            return sb.ToString();
+            return sr.ReadToEnd();
+
         }
 
         public static void WriteUseFs(string path, string txt)
